@@ -24,7 +24,7 @@ phases:
         echo '[
           {
             "name": "container-test-app",
-            "imageUri": "'${ECR_REPOSITORY}':latest"
+            "imageUri": "${ECR_REPOSITORY}:latest"
           }
         ]' > imagedefinitions.json
       - echo imagedefinitions.json created.
